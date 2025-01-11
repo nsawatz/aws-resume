@@ -1,0 +1,10 @@
+# Ignore packed Lambda zip file
+packedlambda.zip
+
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore Terraform working directory
+.terraform/
+.terraform.lock.hcl
