@@ -22,7 +22,7 @@ As part of this project, the website needed a visitor counter. To store the visi
 
 The next step was setting up Git and CI/CD for the frontend. First, I created a repository on GitHub, initialized it locally, and added my files to the repository. This provided a simple way to track changes and push updates to my code.
 
-Next, I implemented GitHub Actions to automate deployments. By adding a .yml file in the workflow folder, I ensured that every push to the repository would automatically update my S3 bucket. I used two key GitHub Actions:
+Next, I implemented GitHub Actions to automate deployments. By adding a ```yaml file in the workflow folder, I ensured that every push to the repository would automatically update my S3 bucket. I used two key GitHub Actions:
 
 * [GitHub Action to Sync S3 Bucket](https://github.com/jakejarvis/s3-sync-action): This syncs the latest source code with the S3 bucket.
 * [Invalidate AWS CloudFront action](https://github.com/marketplace/actions/invalidate-aws-cloudfront): This invalidates the CloudFront cache, ensuring that all new updates are immediately available on the CDN.
