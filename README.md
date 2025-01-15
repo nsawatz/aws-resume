@@ -8,9 +8,9 @@ Since deciding to pursue a career in cloud computing, I have been eager to build
 
 ## Setting up the frontend website
 
-First, you need to set up a website using HTML and CSS. I chose a simple template from Start Bootstrap and customized it with my personal details. Since the goal of this project is to gain hands-on experience with AWS services rather than web development, using an easy-to-work-with template was ideal. Having some prior experience with HTML and CSS, this also served as a great refresher.
+First, you need to set up a website using HTML and CSS. I chose a simple template from [Start Bootstrap](https://startbootstrap.com/theme/resume#google_vignette) and customized it with my personal details. Since the goal of this project is to gain hands-on experience with AWS services rather than web development, using an easy-to-work-with template was ideal. Having some prior experience with HTML and CSS, this also served as a great refresher.
 
-Next, I uploaded my files to an AWS S3 bucket for storage and website hosting. Since I didn’t have a domain name, I registered nicklaus-sawatzke.com through Route 53. I then used AWS Certificate Manager to store and verify an SSL/TLS certificate for HTTPS.
+Next, I uploaded my files to an AWS S3 bucket for storage and website hosting. Since I didn’t have a domain name, I registered _nicklaus-sawatzke.com_ through Route 53. I then used AWS Certificate Manager to store and verify an SSL/TLS certificate for HTTPS.
 
 To ensure fast and efficient content delivery, I created an AWS CloudFront distribution (CDN) to cache and serve my resume website from Edge locations, minimizing latency. Afterward, I mapped my domain name to the CloudFront distribution by creating a CNAME record in Route 53.
 
