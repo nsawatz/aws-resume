@@ -16,3 +16,7 @@ To ensure fast and efficient content delivery, I created an AWS CloudFront distr
 
 ## Setting up the backend infrastructure
 
+As part of this project, the website needed a visitor counter. To store the visitor count, I used DynamoDB. To read and update the count, I implemented an AWS Lambda function in Python. This function updates the visitor count each time its URL is called while ensuring security by whitelisting only my domain.
+
+## CI/CD Integration
+
