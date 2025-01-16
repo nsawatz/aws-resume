@@ -2,6 +2,8 @@
 
 Since deciding to pursue a career in cloud computing, I have been eager to build a cloud-based project. I first came across this project through a YouTube channel and have planned to complete it from the start. The channel introduced me to The [The Cloud Resume Challenge](https://cloudresumechallenge.dev/) by Forrest Brazeal. After exploring the website, I knew it was the perfect challenge for me. This hands-on project integrates essential cloud skills and services, providing a deeper understanding of the development process.
 
+## [Live Example](https://nicklaus-sawatzke.com/)
+
 ## Architecture
 
 ![image](https://github.com/user-attachments/assets/78fdbc24-f2d8-41e1-b679-6f6ac7c4f9c7)
@@ -28,3 +30,9 @@ Next, I implemented GitHub Actions to automate deployments. By adding a yaml fil
 * [Invalidate AWS CloudFront action](https://github.com/marketplace/actions/invalidate-aws-cloudfront): This invalidates the CloudFront cache, ensuring that all new updates are immediately available on the CDN.
 
 With this setup, any changes pushed to the repository automatically deploy to my hosted website, streamlining the update process.
+
+## Infrastructure as Code (IAC)
+
+After setting up the frontend and backend infrastructure, manually creating and deleting these resources each time we need to deploy can be tedious and inefficient. To streamline this process, we can use Infrastructure as Code (IaC) to define and manage infrastructure through code.
+
+For this, I used Terraform, an IaC tool, to write code that automates the creation and deletion of the resume website's infrastructure with simple commands. This approach makes deployment more efficient, scalable, and repeatable.
