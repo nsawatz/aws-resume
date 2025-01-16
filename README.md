@@ -33,6 +33,4 @@ With this setup, any changes pushed to the repository automatically deploy to my
 
 ## Infrastructure as Code (IAC)
 
-After setting up the frontend and backend infrastructure, manually creating and deleting these resources each time we need to deploy can be tedious and inefficient. To streamline this process, we can use Infrastructure as Code (IaC) to define and manage infrastructure through code.
-
-For this, I used Terraform, an IaC tool, to write code that automates the creation and deletion of the resume website's infrastructure with simple commands. This approach makes deployment more efficient, scalable, and repeatable.
+After setting up the frontend and backend infrastructure, manually creating and deleting resources for each deployment can become tedious and inefficient. To streamline this process, we can leverage Infrastructure as Code (IaC) to define and manage our infrastructure through code. Since I had no prior experience with Terraform, I decided to give it a try. I started by creating a single resource: a Lambda function. I ensured that the function was configured with the appropriate roles and policies to guarantee its security and proper functionality.
